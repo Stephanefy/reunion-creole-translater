@@ -1,18 +1,13 @@
 'use client'
 
-import { useState, useRef, useEffect } from "react";
-import { FromTextarea } from "./from-textarea";
-import { ToTextarea } from "./to-textarea";
+import { useState, useRef } from "react";
+import FromTextarea from "./from-textarea";
+import ToTextarea from "./to-textarea";
 import { Button } from "@/components/ui/button";
-import { set, z, ZodError } from "zod";
+import { z, ZodError } from "zod";
 
 
-type Language = 'fr' | 'en' | 're' | 'jp';
 
-interface CurrentLanguage {
-    from: Language;
-    to: Language;
-}
 
 const TranslationInputSchema = z.object({
     fromText: z.string().max(500, "Votre texte à traduire ne doit pas dépasser les 2000 caractères"),

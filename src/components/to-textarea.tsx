@@ -3,7 +3,7 @@
 import { Textarea } from "@/components/ui/textarea"
 import { LoadingDots } from "@/components/loading-dots"
 
-export function ToTextarea({ toText, setToText, isLoading }: { toText: string, setToText: (text: string) => void, isLoading: boolean }) {
+const ToTextarea = ({ toText, setToText, isLoading }: { toText: string, setToText: (text: string) => void, isLoading: boolean }) => {
 
   if (isLoading) {
     return <div className="
@@ -23,5 +23,6 @@ export function ToTextarea({ toText, setToText, isLoading }: { toText: string, s
     value={toText}
     onChange={(e) => setToText(e.target.value)}
   />
-  { isLoading && <LoadingDots /> }
 }
+
+export default ToTextarea;

@@ -10,7 +10,7 @@ interface FromTextAreaProps {
     onFocus?: () => void
 }
 
-export const FromTextarea = forwardRef<HTMLTextAreaElement, FromTextAreaProps>(({ fromText, setFromText, onFocus }, ref) => {
+const FromTextarea = forwardRef<HTMLTextAreaElement, FromTextAreaProps>(({ fromText, setFromText, onFocus }, ref) => {
     return <Textarea
         name="fromText"
         id="fromText"
@@ -23,3 +23,6 @@ export const FromTextarea = forwardRef<HTMLTextAreaElement, FromTextAreaProps>((
     />
 })
 
+FromTextarea.displayName = 'FromTextarea';
+
+export default FromTextarea;

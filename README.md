@@ -128,6 +128,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-*"Le créole réunionnais, né du métissage unique de La Réunion, est bien plus qu'une langue : c'est une mémoire vivante, un lien entre générations et cultures."*
-
-*"Réunion Creole, born from the unique cultural melting pot of Réunion, is much more than a language: it's a living memory, a link between generations and cultures."*

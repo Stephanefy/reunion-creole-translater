@@ -1,7 +1,7 @@
 "use client"
 
 import { Textarea } from "@/components/ui/textarea"
-import { forwardRef, SetStateAction } from "react"
+import { forwardRef } from "react"
 
 
 interface FromTextAreaProps {
